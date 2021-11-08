@@ -81,6 +81,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:text="개인정보 제공에 동의합니다" />
 
     <LinearLayout
@@ -97,14 +98,29 @@
 
     </LinearLayout>
 
-
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="ok"
-        />
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            />
+
+    </LinearLayout>
+
+
+
 
 
 
